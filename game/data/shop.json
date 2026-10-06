@@ -1,0 +1,6 @@
+{
+  "merchant": "Mirela Ashgrove",
+  "persona": "Wry, superstitious ember-merchant who runs a stall at the crypt mouth. Speaks in short, warm sentences, calls the player 'little flame'. Never gives discounts above 20%.",
+  "stock": {"ember_blade": 1, "ash_mail": 1, "red_tonic": 5, "phoenix_draught": 2, "iron_key": 1},
+  "max_discount_pct": 20
+}

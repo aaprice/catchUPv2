@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "ember": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "modules/05_mcp/ember_mcp_server.py"
+      ]
+    },
+    "blender": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "modules/05_mcp/blender/blender_mcp_server.py"
+      ]
+    },
+    "unity": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "modules/05_mcp/unity/unity_mcp_server.py"
+      ]
+    }
+  }
+}

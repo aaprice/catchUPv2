@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+runs/*
+!runs/.gitkeep
+.env
+memory/
+game/data/generated/*
+!game/data/generated/.gitkeep
+.claude/settings.local.json

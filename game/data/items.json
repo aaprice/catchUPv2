@@ -1,0 +1,10 @@
+[
+  {"id": "rusty_sword", "name": "Rusty Sword", "kind": "weapon", "power": 2, "value": 15, "description": "Pitted blade. Still sharper than a fist."},
+  {"id": "ember_blade", "name": "Ember Blade", "kind": "weapon", "power": 5, "value": 60, "description": "Forged in crypt-fire; edge glows faintly orange."},
+  {"id": "bone_shield", "name": "Bone Shield", "kind": "armor", "power": 2, "value": 25, "description": "Ribcage lashed to a board. Ugly, sturdy."},
+  {"id": "ash_mail", "name": "Ash Mail", "kind": "armor", "power": 4, "value": 70, "description": "Chain links dusted with grave ash. Heavy."},
+  {"id": "red_tonic", "name": "Red Tonic", "kind": "potion", "power": 2, "value": 10, "description": "Bitter draught. Heals 10 hp."},
+  {"id": "phoenix_draught", "name": "Phoenix Draught", "kind": "potion", "power": 5, "value": 40, "description": "Warm as a hearth. Heals 25 hp."},
+  {"id": "iron_key", "name": "Iron Key", "kind": "key", "power": 0, "value": 5, "description": "Opens one locked crypt door, then crumbles."},
+  {"id": "cinder_charm", "name": "Cinder Charm", "kind": "trinket", "power": 0, "value": 30, "description": "Smouldering pendant. Merchants love it."}
+]

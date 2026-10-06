@@ -1,0 +1,56 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "ollama/qwen3.5:9b",
+  "small_model": "ollama/gemma4:e4b",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": { "baseURL": "http://localhost:11434/v1" },
+      "models": {
+        "qwen3.5:9b":       { "name": "Qwen 3.5 9B" },
+        "qwen3:8b":         { "name": "Qwen 3 8B" },
+        "qwen3-coder:30b":  { "name": "Qwen3 Coder 30B" },
+        "gpt-oss:20b":      { "name": "gpt-oss 20B" },
+        "gemma4:e4b":       { "name": "Gemma 4 E4B" },
+        "gemma4:12b":       { "name": "Gemma 4 12B" },
+        "gemma4:26b":       { "name": "Gemma 4 26B MoE" },
+        "gemma4:31b":       { "name": "Gemma 4 31B" }
+      }
+    },
+    "llamacpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama.cpp server (--jinja)",
+      "options": { "baseURL": "http://127.0.0.1:8080/v1", "apiKey": "none" },
+      "models": { "local": { "name": "llama.cpp loaded model" } }
+    },
+    "dgx": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "DGX vLLM",
+      "options": { "baseURL": "{env:DGX_URL}", "apiKey": "EMPTY" },
+      "models": {
+        "google/gemma-4-26b-it": { "name": "Gemma 4 26B (DGX)" },
+        "openai/gpt-oss-120b":   { "name": "gpt-oss 120B (DGX)" }
+      }
+    }
+  },
+  "mcp": {
+    "ember":   { "type": "local", "command": ["uv", "run", "python", "modules/05_mcp/ember_mcp_server.py"], "enabled": true },
+    "blender": { "type": "local", "command": ["uv", "run", "python", "modules/05_mcp/blender/blender_mcp_server.py"], "enabled": false },
+    "unity":   { "type": "local", "command": ["uv", "run", "python", "modules/05_mcp/unity/unity_mcp_server.py"], "enabled": false }
+  },
+  "permission": {
+    "edit": "ask",
+    "webfetch": "ask",
+    "bash": {
+      "*": "ask",
+      "uv run pytest*": "allow",
+      "uv run python -m game.*": "allow",
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git log*": "allow",
+      "git push*": "deny",
+      "rm -rf*": "deny"
+    }
+  }
+}

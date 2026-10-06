@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ember": {
+      "command": "uv",
+      "args": ["run", "python", "modules/05_mcp/ember_mcp_server.py"],
+      "cwd": "C:/Users/iamap/Development/ClaudeProjects/CatchUP"
+    }
+  }
+}

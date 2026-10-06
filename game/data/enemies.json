@@ -1,0 +1,49 @@
+[
+  {
+    "id": "crypt_rat",
+    "name": "Crypt Rat",
+    "hp": 6,
+    "atk": 2,
+    "defense": 0,
+    "xp": 3,
+    "loot": [],
+    "description": "Fat rat with ember-red eyes."
+  },
+  {
+    "id": "ash_skeleton",
+    "name": "Ash Skeleton",
+    "hp": 14,
+    "atk": 4,
+    "defense": 1,
+    "xp": 8,
+    "loot": [
+      "red_tonic"
+    ],
+    "description": "Bones held together by smouldering hate."
+  },
+  {
+    "id": "cinder_wraith",
+    "name": "Cinder Wraith",
+    "hp": 20,
+    "atk": 6,
+    "defense": 2,
+    "xp": 15,
+    "loot": [
+      "cinder_charm"
+    ],
+    "description": "Floating smoke shaped like a mourner."
+  },
+  {
+    "id": "gravewarden",
+    "name": "Gravewarden",
+    "hp": 28,
+    "atk": 6,
+    "defense": 2,
+    "xp": 40,
+    "loot": [
+      "iron_key",
+      "phoenix_draught"
+    ],
+    "description": "Armoured keeper of the lower crypt. Carries the key."
+  }
+]
